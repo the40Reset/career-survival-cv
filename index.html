@@ -417,6 +417,41 @@ body.locked .toolbar,body.locked .app{display:none;}
   .gate-login-panel{padding:18px;}
 }
 
+
+/* ---------- PURCHASE CTA ---------- */
+.buy-access-btn{
+  display:block;
+  width:100%;
+  margin:18px 0 12px;
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:800;
+  font-size:17px;
+  color:#111;
+  background:linear-gradient(135deg,#f2d59c,#cda45e 55%,#9a7434);
+  box-shadow:0 12px 35px rgba(205,164,94,.35);
+  transition:transform .25s ease,box-shadow .25s ease,filter .25s ease;
+}
+.buy-access-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 45px rgba(205,164,94,.45);
+  filter:brightness(1.04);
+}
+.buy-note{
+  text-align:center;
+  color:#b8bec9;
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:8px;
+}
+.gate-divider{
+  margin:26px 0;
+  border:none;
+  border-top:1px solid rgba(255,255,255,.12);
+}
+
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P1Kz9n2C8vW8l7eUQkfr0bJvrKx5h41D8VY93kYf4bJVoOFXm6GNgQUb48z+KQ+09R6a2jxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -438,7 +473,23 @@ body.locked .toolbar,body.locked .app{display:none;}
       <div class="gate-form">
         <h2>Unlock Premium Builder</h2>
         <p>Enter your private password to access The 40 Reset Career Survival Profile.</p>
-        <input class="gate-input" id="gatePassword" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter') unlockApp()">
+        
+      <a href="https://lynk.id/the_40_reset/j4zmew4njl55/checkout"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="buy-access-btn">
+        🚀 BELI AKSES SEKARANG
+      </a>
+
+      <div class="buy-note">
+        Setelah melakukan pembelian, Anda akan mendapatkan password untuk membuka Career Survival Profile.
+      </div>
+
+      <hr class="gate-divider">
+
+      <p style="margin-bottom:10px;">Sudah punya password? Masukkan di bawah ini.</p>
+
+<input class="gate-input" id="gatePassword" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter') unlockApp()">
         <button class="gate-btn" onclick="unlockApp()">Unlock Builder</button>
         <div class="gate-error" id="gateError">Wrong password. Please try again.</div>
         <div class="gate-donation">💖 Every purchase matters — <span>10% of every sale is donated</span> to a foundation that supports people in need. Proof is shared monthly.</div>
