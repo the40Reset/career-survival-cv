@@ -456,447 +456,102 @@ body.locked .toolbar,body.locked .app{display:none;}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P1Kz9n2C8vW8l7eUQkfr0bJvrKx5h41D8VY93kYf4bJVoOFXm6GNgQUb48z+KQ+09R6a2jxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<style id="career-survival-cv-white-sales">
-/* ===== WHITE SALES-FIRST GATE ===== */
-body.locked{
-  overflow:auto!important;
-  background:#fffdf8!important;
-}
-body.locked .toolbar,
-body.locked .app{display:none!important;}
-
-.white-sales-gate{
-  position:relative!important;
-  inset:auto!important;
-  z-index:999!important;
-  display:block!important;
-  min-height:100svh!important;
-  padding:0!important;
-  overflow:visible!important;
-  background:
-    radial-gradient(circle at 50% 0%,rgba(205,164,94,.10),transparent 34%),
-    linear-gradient(180deg,#fff 0%,#fffdf8 58%,#f8f2e6 100%)!important;
-  color:#111!important;
-}
-
-.white-sales-shell{
-  width:min(760px,100%);
-  margin:0 auto;
-  padding:30px 20px 54px;
-}
-
-.white-sales-brand{
-  text-align:center;
-  color:#9a7434;
-  font-size:11px;
-  letter-spacing:.20em;
-  font-weight:800;
-  margin-bottom:22px;
-}
-
-.white-sales-hero{
-  text-align:center;
-}
-
-.white-sales-kicker{
-  color:#9a7434;
-  font-size:11px;
-  letter-spacing:.22em;
-  font-weight:800;
-  margin-bottom:13px;
-}
-
-.white-sales-hero h1{
-  color:#101827;
-  font-size:clamp(42px,10vw,72px);
-  line-height:.91;
-  letter-spacing:-.055em;
-  font-family:var(--font-body);
-  font-weight:800;
-}
-
-.white-sales-hero h1 em{
-  font-style:normal;
-  color:#c9961a;
-}
-
-.white-sales-line{
-  width:78%;
-  max-width:520px;
-  height:1.5px;
-  background:#c9961a;
-  margin:22px auto 18px;
-}
-
-.white-sales-copy{
-  max-width:620px;
-  margin:0 auto;
-  color:#30343b;
-  font-size:clamp(14px,3.7vw,17px);
-  line-height:1.68;
-  font-weight:500;
-}
-
-.white-sales-values{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:0;
-  margin:30px 0 26px;
-  border-top:1px solid rgba(201,150,26,.20);
-  border-bottom:1px solid rgba(201,150,26,.20);
-  padding:18px 0;
-}
-
-.white-sales-value{
-  min-width:0;
-  padding:3px 10px;
-  border-right:1px solid rgba(201,150,26,.20);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
-
-.white-sales-value:last-child{border-right:none;}
-
-.white-sales-icon{
-  min-height:31px;
-  font-size:29px;
-  color:#c9961a;
-  line-height:1;
-  margin-bottom:7px;
-  font-weight:700;
-}
-
-.white-sales-value:nth-child(4) .white-sales-icon{
-  font-size:13px;
-  border:2px solid #c9961a;
-  border-radius:5px;
-  padding:7px 4px;
-}
-
-.white-sales-value b{
-  color:#101827;
-  font-size:11px;
-  line-height:1.25;
-  font-weight:800;
-}
-
-.white-sales-value span{
-  color:#5f6268;
-  font-size:9px;
-  line-height:1.3;
-  font-weight:700;
-  margin-top:2px;
-}
-
-.white-sales-pricebox{
-  margin:8px auto 28px;
-  padding:24px 20px 19px;
-  border-radius:18px;
-  background:#fffaf0;
-  border:1.5px solid rgba(201,150,26,.55);
-  box-shadow:0 18px 45px rgba(84,63,17,.10);
-  text-align:center;
-  color:#111;
-}
-
-.white-sales-price-label{
-  color:#8a6824;
-  font-size:11px;
-  letter-spacing:.18em;
-  font-weight:800;
-}
-
-.white-sales-price{
-  color:#101827;
-  font-size:clamp(38px,10vw,55px);
-  font-weight:800;
-  letter-spacing:-.055em;
-  line-height:1.08;
-  margin-top:3px;
-}
-
-.white-sales-price-note{
-  color:#565a61;
-  font-size:13px;
-  font-weight:500;
-  margin:2px 0 15px;
-}
-
-.white-sales-buy{
-  min-height:58px;
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:12px;
-  padding:15px 16px;
-  background:linear-gradient(135deg,#f3cf70 0%,#e8aa16 50%,#c8870e 100%);
-  color:#111!important;
-  text-decoration:none!important;
-  font-size:clamp(15px,3.8vw,17px);
-  font-weight:800;
-  box-shadow:0 12px 28px rgba(201,150,26,.18);
-}
-
-.white-sales-secure{
-  color:#62656a;
-  font-size:11px;
-  font-weight:600;
-  margin-top:10px;
-}
-
-.white-sales-fit{
-  background:#fff;
-  border:1px solid rgba(201,150,26,.22);
-  border-radius:18px;
-  padding:22px 20px;
-  text-align:left;
-}
-
-.white-sales-fit h3{
-  color:#101827;
-  font-size:20px;
-  font-weight:800;
-  margin-bottom:13px;
-}
-
-.white-sales-fit-item{
-  display:grid;
-  grid-template-columns:25px 1fr;
-  gap:9px;
-  align-items:start;
-  margin:9px 0;
-}
-
-.white-sales-fit-item span{
-  width:21px;
-  height:21px;
-  border-radius:50%;
-  border:1.5px solid #c9961a;
-  color:#c9961a;
-  display:grid;
-  place-items:center;
-  font-size:12px;
-  font-weight:800;
-  margin-top:2px;
-}
-
-.white-sales-fit-item p{
-  color:#30343b;
-  font-size:14px;
-  line-height:1.55;
-  font-weight:500;
-}
-
-.white-sales-access{
-  margin-top:26px;
-  padding:24px 20px;
-  border:1px solid rgba(201,150,26,.34);
-  border-radius:18px;
-  background:#fffdf8;
-  text-align:center;
-}
-
-.white-sales-access-kicker{
-  color:#9a7434;
-  font-size:11px;
-  letter-spacing:.16em;
-  font-weight:800;
-  margin-bottom:5px;
-}
-
-.white-sales-access h3{
-  color:#101827;
-  font-size:19px;
-  line-height:1.35;
-  font-weight:800;
-}
-
-.white-sales-access>p{
-  color:#68635a;
-  font-size:12px;
-  font-weight:500;
-  margin:6px 0 15px;
-}
-
-.white-sales-input{
-  width:100%!important;
-  background:#f7f3eb!important;
-  border:1.5px solid rgba(16,24,39,.16)!important;
-  color:#111!important;
-  text-align:center!important;
-  letter-spacing:.10em!important;
-  border-radius:10px!important;
-  padding:14px!important;
-  margin-bottom:10px!important;
-}
-
-.white-sales-input::placeholder{color:#777!important;}
-
-.white-sales-input:focus{
-  outline:none!important;
-  border-color:#c9961a!important;
-  box-shadow:0 0 0 4px rgba(201,150,26,.10)!important;
-}
-
-.white-sales-unlock{
-  width:100%!important;
-  min-height:56px!important;
-  border:none!important;
-  border-radius:12px!important;
-  background:linear-gradient(135deg,#f3cf70 0%,#e8aa16 50%,#c8870e 100%)!important;
-  color:#111!important;
-  font-family:var(--font-body)!important;
-  font-size:15px!important;
-  font-weight:800!important;
-  cursor:pointer!important;
-}
-
-.white-sales-error{
-  color:#a22!important;
-  background:transparent!important;
-  margin-top:10px!important;
-  min-height:18px!important;
-}
-
-.white-sales-donation{
-  margin-top:18px;
-  padding:14px 16px;
-  border-radius:14px;
-  background:#fff9eb;
-  border:1px solid rgba(201,150,26,.20);
-  color:#494134;
-  font-size:12px;
-  line-height:1.55;
-  font-weight:500;
-  text-align:left;
-}
-
-.white-sales-note{
-  margin-top:14px;
-  text-align:center;
-  color:#8a8175;
-  font-size:10px;
-  letter-spacing:.06em;
-}
-
-@media(max-width:620px){
-  .white-sales-shell{padding:26px 16px 38px;}
-  .white-sales-values{
-    grid-template-columns:repeat(2,1fr);
-    padding:0;
-    border-bottom:none;
-  }
-  .white-sales-value{
-    padding:15px 8px;
-    border-bottom:1px solid rgba(201,150,26,.20);
-  }
-  .white-sales-value:nth-child(2){border-right:none;}
-  .white-sales-pricebox{
-    border-radius:17px;
-    padding:21px 15px 16px;
-  }
-}
+<style id="white-front-only-style">
+.password-gate.white-front-only{position:fixed;inset:0;z-index:999;display:block;overflow:auto;padding:0;background:radial-gradient(circle at 50% 0%,rgba(205,164,94,.10),transparent 34%),linear-gradient(180deg,#fff 0%,#fffdf8 58%,#f8f2e6 100%);color:#111}
+.white-front-only .white-front-shell{width:min(760px,100%);margin:0 auto;padding:30px 20px 54px}
+.white-front-only .white-front-brand{text-align:center;color:#9a7434;font-size:11px;letter-spacing:.20em;font-weight:800;margin-bottom:22px}
+.white-front-only .white-front-hero{text-align:center}
+.white-front-only .white-front-kicker{color:#9a7434;font-size:11px;letter-spacing:.22em;font-weight:800;margin-bottom:13px}
+.white-front-only .white-front-hero h1{margin:0;color:#101827;font-family:var(--font-body);font-size:clamp(44px,10vw,74px);line-height:.92;letter-spacing:-.055em;font-weight:800}
+.white-front-only .white-front-hero h1 em{font-style:normal;color:#c9961a}
+.white-front-only .white-front-subhook{margin-top:16px;color:#101827;font-size:clamp(16px,4vw,23px);line-height:1.2;font-weight:800;letter-spacing:-.02em}
+.white-front-only .white-front-line{width:78%;max-width:520px;height:1.5px;background:#c9961a;margin:20px auto 18px}
+.white-front-only .white-front-copy{max-width:620px;margin:0 auto;color:#30343b;font-size:clamp(14px,3.7vw,17px);line-height:1.68;font-weight:500}
+.white-front-only .white-front-values{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:30px 0 26px;border-top:1px solid rgba(201,150,26,.20);border-bottom:1px solid rgba(201,150,26,.20);padding:18px 0}
+.white-front-only .white-front-value{min-width:0;padding:3px 10px;border-right:1px solid rgba(201,150,26,.20);display:flex;flex-direction:column;align-items:center;text-align:center}
+.white-front-only .white-front-value:last-child{border-right:none}
+.white-front-only .white-front-icon{min-height:31px;font-size:29px;color:#c9961a;line-height:1;margin-bottom:7px;font-weight:700}
+.white-front-only .white-front-pdf{font-size:12px;border:2px solid #c9961a;border-radius:5px;padding:7px 4px}
+.white-front-only .white-front-value b{color:#101827;font-size:11px;line-height:1.25;font-weight:800}
+.white-front-only .white-front-value span{color:#5f6268;font-size:9px;line-height:1.3;font-weight:700;margin-top:2px}
+.white-front-only .white-front-price{margin:8px auto 28px;padding:24px 20px 19px;border-radius:18px;background:#fffaf0;border:1.5px solid rgba(201,150,26,.55);box-shadow:0 18px 45px rgba(84,63,17,.10);text-align:center}
+.white-front-only .white-front-price-label{color:#8a6824;font-size:11px;letter-spacing:.18em;font-weight:800}
+.white-front-only .white-front-price-number{color:#101827;font-size:clamp(38px,10vw,55px);font-weight:800;letter-spacing:-.055em;line-height:1.08;margin-top:3px}
+.white-front-only .white-front-price-note{color:#565a61;font-size:13px;margin:2px 0 15px}
+.white-front-only .white-front-buy{min-height:58px;width:100%;display:flex;align-items:center;justify-content:center;border-radius:12px;padding:15px 16px;background:linear-gradient(135deg,#f3cf70 0%,#e8aa16 50%,#c8870e 100%);color:#111!important;text-decoration:none!important;font-size:clamp(15px,3.8vw,17px);font-weight:800;box-shadow:0 12px 28px rgba(201,150,26,.18)}
+.white-front-only .white-front-secure{color:#62656a;font-size:11px;font-weight:600;margin-top:10px}
+.white-front-only .white-front-fit{background:#fff;border:1px solid rgba(201,150,26,.22);border-radius:18px;padding:22px 20px;text-align:left}
+.white-front-only .white-front-fit h3{color:#101827;font-size:20px;font-weight:800;margin-bottom:13px}
+.white-front-only .white-front-fit>div{display:grid;grid-template-columns:25px 1fr;gap:9px;align-items:start;margin:9px 0}
+.white-front-only .white-front-fit span{width:21px;height:21px;border-radius:50%;border:1.5px solid #c9961a;color:#c9961a;display:grid;place-items:center;font-size:12px;font-weight:800;margin-top:2px}
+.white-front-only .white-front-fit p{margin:0;color:#30343b;font-size:14px;line-height:1.55;font-weight:500}
+.white-front-only .white-front-access{margin-top:26px;padding:24px 20px;border:1px solid rgba(201,150,26,.34);border-radius:18px;background:#fffdf8;text-align:center}
+.white-front-only .white-front-access-kicker{color:#9a7434;font-size:11px;letter-spacing:.16em;font-weight:800;margin-bottom:5px}
+.white-front-only .white-front-access h3{color:#101827;font-size:19px;line-height:1.35;font-weight:800}
+.white-front-only .white-front-access>p{color:#68635a;font-size:12px;margin:6px 0 15px}
+.white-front-only .white-front-input{width:100%!important;background:#f7f3eb!important;border:1.5px solid rgba(16,24,39,.16)!important;color:#111!important;text-align:center!important;letter-spacing:.10em!important;border-radius:10px!important;padding:14px!important;margin-bottom:10px!important}
+.white-front-only .white-front-unlock{width:100%!important;min-height:56px!important;border:none!important;border-radius:12px!important;background:linear-gradient(135deg,#f3cf70 0%,#e8aa16 50%,#c8870e 100%)!important;color:#111!important;font-family:var(--font-body)!important;font-size:15px!important;font-weight:800!important;cursor:pointer!important}
+.white-front-only .white-front-error{color:#a22!important;margin-top:10px!important}
+.white-front-only .white-front-donation{margin-top:18px;background:#fff9eb;border:1px solid rgba(201,150,26,.20);color:#494134}
+.white-front-only .white-front-donation span{color:#9a7434}
+.white-front-only .white-front-note{color:#8a8175;border-top:1px solid rgba(201,150,26,.16)}
+@media(max-width:620px){.white-front-only .white-front-shell{padding:26px 16px 38px}.white-front-only .white-front-values{grid-template-columns:repeat(2,1fr);padding:0;border-bottom:none}.white-front-only .white-front-value{padding:15px 8px;border-bottom:1px solid rgba(201,150,26,.20)}.white-front-only .white-front-value:nth-child(2){border-right:none}}
 </style>
 
 </head>
 <body class="locked">
 
 
-<div class="password-gate white-sales-gate" id="passwordGate">
-  <div class="white-sales-shell">
+<div class="password-gate white-front-only" id="passwordGate">
+  <div class="white-front-shell">
+    <div class="white-front-brand">THE 40 RESET · CAREER SURVIVAL CV™</div>
 
-    <div class="white-sales-brand">THE 40 RESET · CAREER SURVIVAL CV™</div>
-
-    <section class="white-sales-hero">
-      <div class="white-sales-kicker">CAREER SURVIVAL CV™</div>
-      <h1>CV LO UDAH SIAP<br><em>BERTAHAN</em> DI PASAR KERJA?</h1>
-      <div class="white-sales-line"></div>
-      <p class="white-sales-copy">
+    <section class="white-front-hero">
+      <div class="white-front-kicker">CAREER SURVIVAL CV™</div>
+      <h1>RECRUITER BACA CV LO...<br><em>ATAU SKIP?</em></h1>
+      <div class="white-front-subhook">CV BAGUS BELUM TENTU DIBACA SAMPAI SELESAI.</div>
+      <div class="white-front-line"></div>
+      <p class="white-front-copy">
         Career Survival CV™ adalah CV Builder berdasarkan 16+ tahun pengalaman korporasi.
-        Template proven, ATS friendly, mudah diedit, dan siap lo export ke PDF.
+        Bantu lo menyusun CV yang lebih jelas, ATS friendly, mudah dibaca recruiter,
+        dan siap lo export ke PDF.
       </p>
 
-      <div class="white-sales-values">
-        <div class="white-sales-value">
-          <div class="white-sales-icon">▤</div>
-          <b>TEMPLATE PROVEN</b>
-          <span>& ATS FRIENDLY</span>
-        </div>
-        <div class="white-sales-value">
-          <div class="white-sales-icon">◇</div>
-          <b>STANDAR INDUSTRI</b>
-          <span>BERBASIS 16+ TAHUN</span>
-        </div>
-        <div class="white-sales-value">
-          <div class="white-sales-icon">✎</div>
-          <b>MUDAH DIEDIT</b>
-          <span>& SIAP DIGUNAKAN</span>
-        </div>
-        <div class="white-sales-value">
-          <div class="white-sales-icon">PDF</div>
-          <b>EXPORT PDF</b>
-          <span>BERKUALITAS</span>
-        </div>
+      <div class="white-front-values">
+        <div class="white-front-value"><div class="white-front-icon">▤</div><b>TEMPLATE PROVEN</b><span>& ATS FRIENDLY</span></div>
+        <div class="white-front-value"><div class="white-front-icon">◇</div><b>16+ TAHUN</b><span>INSIGHT KORPORASI</span></div>
+        <div class="white-front-value"><div class="white-front-icon">✎</div><b>MUDAH DIEDIT</b><span>& SIAP DIGUNAKAN</span></div>
+        <div class="white-front-value"><div class="white-front-icon white-front-pdf">PDF</div><b>EXPORT PDF</b><span>SIAP KIRIM</span></div>
       </div>
     </section>
 
-    <section class="white-sales-pricebox">
-      <div class="white-sales-price-label">HARGA</div>
-      <div class="white-sales-price">Rp35.000</div>
-      <div class="white-sales-price-note">Sekali bayar.</div>
-
-      <a href="https://lynk.id/the_40_reset/j4zmew4njl55/checkout"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="white-sales-buy">
-        BANGUN CV →
-      </a>
-
-      <div class="white-sales-secure">🔒 Pembayaran aman & rahasia</div>
+    <section class="white-front-price">
+      <div class="white-front-price-label">HARGA</div>
+      <div class="white-front-price-number">Rp35.000</div>
+      <div class="white-front-price-note">Sekali bayar.</div>
+      <a href="https://lynk.id/the_40_reset/j4zmew4njl55/checkout" target="_blank" rel="noopener noreferrer" class="white-front-buy">BANGUN CV →</a>
+      <div class="white-front-secure">🔒 Pembayaran aman & rahasia</div>
     </section>
 
-    <section class="white-sales-fit">
+    <section class="white-front-fit">
       <h3>Cocok buat lo yang:</h3>
-
-      <div class="white-sales-fit-item"><span>✓</span><p>Lagi update CV dan ingin tampil lebih profesional.</p></div>
-      <div class="white-sales-fit-item"><span>✓</span><p>Sering apply tapi jarang dapat panggilan interview.</p></div>
-      <div class="white-sales-fit-item"><span>✓</span><p>Ingin CV yang ATS friendly dan mudah dibaca recruiter.</p></div>
-      <div class="white-sales-fit-item"><span>✓</span><p>Butuh template CV yang dibuat dengan perspektif korporasi.</p></div>
-      <div class="white-sales-fit-item"><span>✓</span><p>Mau hemat waktu dan langsung mulai dari struktur yang siap dipakai.</p></div>
+      <div><span>✓</span><p>Sudah lama nggak update CV dan bingung mulai dari mana.</p></div>
+      <div><span>✓</span><p>Sering apply tapi CV lo jarang menghasilkan panggilan interview.</p></div>
+      <div><span>✓</span><p>Mau CV yang ATS friendly dan lebih gampang dibaca recruiter.</p></div>
+      <div><span>✓</span><p>Mau pengalaman kerja lo terlihat lebih jelas, bukan cuma penuh tulisan.</p></div>
+      <div><span>✓</span><p>Butuh template yang tinggal lo isi, rapikan, lalu kirim.</p></div>
     </section>
 
-    <section class="white-sales-access">
-      <div class="white-sales-access-kicker">SUDAH MEMBELI?</div>
+    <section class="white-front-access">
+      <div class="white-front-access-kicker">SUDAH MEMBELI?</div>
       <h3>Masukkan kode akses untuk mulai membangun CV lo.</h3>
       <p>Kode dikirim setelah pembelian Career Survival CV™.</p>
-
-      <input
-        class="gate-input white-sales-input"
-        id="gatePassword"
-        type="password"
-        placeholder="KODE AKSES"
-        onkeydown="if(event.key==='Enter') unlockApp()"
-      >
-
-      <button class="gate-btn white-sales-unlock" onclick="unlockApp()">
-        MULAI BANGUN CV →
-      </button>
-
-      <div class="gate-error white-sales-error" id="gateError">
-        Wrong password. Please try again.
-      </div>
+      <input class="gate-input white-front-input" id="gatePassword" type="password" placeholder="KODE AKSES" onkeydown="if(event.key==='Enter') unlockApp()">
+      <button class="gate-btn white-front-unlock" onclick="unlockApp()">MULAI BANGUN CV →</button>
+      <div class="gate-error white-front-error" id="gateError">Wrong password. Please try again.</div>
+      <div class="gate-donation white-front-donation">💖 Every purchase matters — <span>10% of every sale is donated</span> to a foundation that supports people in need. Proof is shared monthly.</div>
+      <div class="gate-note white-front-note">Private prototype · The 40 Reset by Dhimas Garendi</div>
     </section>
-
-    <div class="white-sales-donation">
-      ❤️ Setiap produk yang terjual — <strong>10% disumbangkan</strong> ke yayasan yang membutuhkan.
-    </div>
-
-    <div class="white-sales-note">
-      The 40 Reset · Career Survival CV™ · by Dhimas Garendi
-    </div>
   </div>
 </div>
 
@@ -1540,90 +1195,5 @@ bindAccentPicker();
 initAll();
 checkAccess();
 </script>
-
-<script id="career-survival-access-failsafe">
-(function(){
-  const PASSWORD = 'siapsiap';
-  const ACCESS_KEY = 'the40reset_cv_access_granted';
-
-  function openBuilder(){
-    try { sessionStorage.setItem(ACCESS_KEY,'yes'); } catch(e) {}
-    document.body.classList.remove('locked');
-
-    const gate = document.getElementById('passwordGate');
-    if(gate){
-      gate.style.setProperty('display','none','important');
-      gate.setAttribute('aria-hidden','true');
-    }
-
-    const toolbar = document.querySelector('.toolbar');
-    const app = document.querySelector('.app');
-    if(toolbar) toolbar.style.removeProperty('display');
-    if(app) app.style.removeProperty('display');
-
-    window.scrollTo({top:0,behavior:'instant'});
-  }
-
-  window.unlockApp = function(){
-    const input = document.getElementById('gatePassword');
-    const error = document.getElementById('gateError');
-
-    if(!input){
-      console.error('gatePassword input not found');
-      return;
-    }
-
-    const entered = String(input.value || '')
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g,'');
-
-    if(entered === PASSWORD){
-      if(error){
-        error.style.display='none';
-        error.textContent='';
-      }
-      openBuilder();
-      return;
-    }
-
-    if(error){
-      error.textContent='Kode salah. Gunakan: siapsiap';
-      error.style.display='block';
-    }
-    input.focus();
-    input.select();
-  };
-
-  document.addEventListener('DOMContentLoaded', function(){
-    const input = document.getElementById('gatePassword');
-    const btn = document.querySelector('.white-sales-unlock');
-
-    if(input){
-      input.setAttribute('autocomplete','off');
-      input.addEventListener('keydown', function(e){
-        if(e.key === 'Enter'){
-          e.preventDefault();
-          window.unlockApp();
-        }
-      });
-    }
-
-    if(btn){
-      btn.onclick = function(e){
-        e.preventDefault();
-        window.unlockApp();
-      };
-    }
-
-    try{
-      if(sessionStorage.getItem(ACCESS_KEY)==='yes'){
-        openBuilder();
-      }
-    }catch(e){}
-  });
-})();
-</script>
-
 </body>
 </html>
