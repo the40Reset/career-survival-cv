@@ -1540,5 +1540,90 @@ bindAccentPicker();
 initAll();
 checkAccess();
 </script>
+
+<script id="career-survival-access-failsafe">
+(function(){
+  const PASSWORD = 'siapsiap';
+  const ACCESS_KEY = 'the40reset_cv_access_granted';
+
+  function openBuilder(){
+    try { sessionStorage.setItem(ACCESS_KEY,'yes'); } catch(e) {}
+    document.body.classList.remove('locked');
+
+    const gate = document.getElementById('passwordGate');
+    if(gate){
+      gate.style.setProperty('display','none','important');
+      gate.setAttribute('aria-hidden','true');
+    }
+
+    const toolbar = document.querySelector('.toolbar');
+    const app = document.querySelector('.app');
+    if(toolbar) toolbar.style.removeProperty('display');
+    if(app) app.style.removeProperty('display');
+
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+
+  window.unlockApp = function(){
+    const input = document.getElementById('gatePassword');
+    const error = document.getElementById('gateError');
+
+    if(!input){
+      console.error('gatePassword input not found');
+      return;
+    }
+
+    const entered = String(input.value || '')
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g,'');
+
+    if(entered === PASSWORD){
+      if(error){
+        error.style.display='none';
+        error.textContent='';
+      }
+      openBuilder();
+      return;
+    }
+
+    if(error){
+      error.textContent='Kode salah. Gunakan: siapsiap';
+      error.style.display='block';
+    }
+    input.focus();
+    input.select();
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const input = document.getElementById('gatePassword');
+    const btn = document.querySelector('.white-sales-unlock');
+
+    if(input){
+      input.setAttribute('autocomplete','off');
+      input.addEventListener('keydown', function(e){
+        if(e.key === 'Enter'){
+          e.preventDefault();
+          window.unlockApp();
+        }
+      });
+    }
+
+    if(btn){
+      btn.onclick = function(e){
+        e.preventDefault();
+        window.unlockApp();
+      };
+    }
+
+    try{
+      if(sessionStorage.getItem(ACCESS_KEY)==='yes'){
+        openBuilder();
+      }
+    }catch(e){}
+  });
+})();
+</script>
+
 </body>
 </html>
