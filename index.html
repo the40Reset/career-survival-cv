@@ -713,12 +713,20 @@ function unlockApp(){
   }
 }
 function checkAccess(){
+  // Always open this page from the very top, even when arriving from another page
+  // or when the browser restores the previous scroll position.
+  if('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0,0);
+  requestAnimationFrame(()=>window.scrollTo(0,0));
+  setTimeout(()=>window.scrollTo(0,0),80);
+
   if(sessionStorage.getItem(ACCESS_KEY)==='yes'){
     document.body.classList.remove('locked');
     const gate=document.getElementById('passwordGate');
     if(gate) gate.style.display='none';
   }else{
-    setTimeout(()=>{const el=document.getElementById('gatePassword'); if(el) el.focus();},120);
+    // Don't auto-focus the password field here: on mobile that can pull the
+    // viewport down to the access-code section.
   }
 }
 
